@@ -29,7 +29,7 @@ This repository contains notes, practice problems, and code exercises as I learn
 **Clone the repository:**
 
    ```sh
-   git clone https://github.com/Tanzeebul-Tamim/Learning-JAVA-Fundamentals
+   git clone https://github.com/Tanzeebul-Tamim/JAVA-Fundamentals
 
    ```
 
