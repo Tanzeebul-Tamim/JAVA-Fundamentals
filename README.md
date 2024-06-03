@@ -4,11 +4,10 @@ This repository contains notes, practice problems, and code exercises as I learn
 
 **Content:**
 
-* ***Notes***: Summarized key points.
 * ***Practice Problems***: Solutions to coding exercises or additional practice problems.
 * ***Code Exercises***: Code written for various Java concepts covered.
 * ***Explanation in annotations***: Code workings explained in comments.
-* ***Notes***: Chapter wise notes included.
+* ***Notes***: Chapter wise notes included with summarized key points.
 
 ## Getting Started
 
