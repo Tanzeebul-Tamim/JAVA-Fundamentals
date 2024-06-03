@@ -17,7 +17,7 @@ public class Part_25_7 {
                 j++;
             }
             i--;
-            System.out.println("");
+            System.out.println();
         }
     }
 }

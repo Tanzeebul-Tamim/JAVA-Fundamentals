@@ -14,7 +14,7 @@ public class Part_29_4 {
         System.out.println("Enter the number of columns of the matrixes you want to add:");
         int column = scanner.nextInt();
 
-        System.out.println("");
+        System.out.println();
 
         if (row <= 0 || column <= 0) {
             scanner.close();
@@ -33,7 +33,7 @@ public class Part_29_4 {
             }
         }
 
-        System.out.println("");
+        System.out.println();
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
@@ -50,7 +50,7 @@ public class Part_29_4 {
                 System.out.print(result[i][j] + " ");
             }
             System.out.print("|");
-            System.out.println("");
+            System.out.println();
         }
 
         scanner.close();

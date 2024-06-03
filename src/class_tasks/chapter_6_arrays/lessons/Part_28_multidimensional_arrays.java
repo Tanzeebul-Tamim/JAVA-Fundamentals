@@ -26,7 +26,7 @@ public class Part_28_multidimensional_arrays {
             for (int j = 0; j < flats[i].length; j++) {
                 System.out.print(flats[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
 
         String[][][] arr = new String[3][2][3];
