@@ -32,7 +32,7 @@ public class Part_35_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the n-th term of fibonacci series using recursion");
+        System.out.println("Enter the n-th term of fibonacci series using recursion:");
         int n = scanner.nextInt();
 
         scanner.close();

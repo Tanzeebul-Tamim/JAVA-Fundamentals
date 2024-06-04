@@ -15,8 +15,9 @@ import java.util.Scanner;
  * then turns back to the previous step and prints 2 stars
  * then turns back to the previous step and prints 3 stars
  * then turns back again and lastly prints 4 stars (from the last step which was called at the beginning)
+ * Here are the steps:
 
- * = printPattern(4) + 
+ * = printPattern(4)
  * = printPattern(3)
  * = printPattern(2)
  * = printPattern(1)
@@ -33,9 +34,7 @@ import java.util.Scanner;
 
 public class Part_35_8 {
     static void printPattern(int n) {
-        if (n <= 0) {
-            return;
-        } else {
+        if (n > 0) {
             printPattern(n - 1);
             for (int i = 0; i < n; i++) {
                 System.out.print("*");
@@ -47,10 +46,15 @@ public class Part_35_8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the number of lines for your pattern");
+        System.out.println("Enter the number of lines for your pattern:");
         int n = scanner.nextInt();
-        printPattern(n);
-
+        
         scanner.close();
+
+        if (n <= 0) {
+            throw new Error("Must be at least one line");
+        }
+
+        printPattern(n);
     }
 }

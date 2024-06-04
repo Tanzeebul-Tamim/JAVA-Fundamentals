@@ -10,7 +10,7 @@ public class Part_23_for_quiz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Print first first n odd numbers");
+        System.out.println("Print first first n odd numbers:");
         int n = scanner.nextInt();
         scanner.close();
 

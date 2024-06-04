@@ -8,7 +8,7 @@ public class Part_25_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter a number that you want to print the multiplication table of: ");
+        System.out.println("Please enter a number that you want to print the multiplication table of:");
         int n = scanner.nextInt();
         scanner.close();
 

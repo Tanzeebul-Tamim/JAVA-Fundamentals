@@ -25,10 +25,15 @@ public class Part_35_7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the number of lines for your pattern");
+        System.out.println("Enter the number of lines for your pattern:");
         int n = scanner.nextInt();
-        printPattern(n);
-
+        
         scanner.close();
+        
+        if (n <= 0) {
+            throw new Error("Must be at least one line");
+        }
+
+        printPattern(n);
     }
 }

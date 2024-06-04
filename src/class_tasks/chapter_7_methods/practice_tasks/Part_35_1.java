@@ -14,7 +14,7 @@ public class Part_35_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the number of which you want to see the multiplication table of");
+        System.out.println("Enter the number of which you want to see the multiplication table of:");
         int n = scanner.nextInt();
 
         scanner.close();
