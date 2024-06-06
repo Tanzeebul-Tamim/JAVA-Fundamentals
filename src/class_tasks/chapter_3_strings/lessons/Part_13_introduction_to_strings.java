@@ -21,7 +21,7 @@ public class Part_13_introduction_to_strings {
         // * Different ways to print in Java
         System.out.print("My name is "); // * No new line at the end
         System.out.println(myName); // * Prints a new line at the end
-        int a = 6;
+        int a = 611;
         float b = 5.6454f;
         // * %d and %f are called format specifier
         // * %d for int, %f for float, %c for char and %s for string
@@ -29,7 +29,7 @@ public class Part_13_introduction_to_strings {
         // * %.2f means 2 digits after decimal
         System.out.printf("The value of a is %2d and value of b is %.2f", a, b);
         // * Same as printf
-        System.out.format("The value of a is %d and value of b is %f", a, b);
+        System.out.format("\nThe value of a is %d and value of b is %f\n", a, b);
 
         Scanner sc = new Scanner(System.in);
         // String st = sc.next(); //* Prints only one word

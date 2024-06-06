@@ -3,7 +3,10 @@ package class_tasks.chapter_4_conditionals.practice_tasks;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Part_20_rock_paper_scissors_challenge {
+/*
+    Exercise-2: Build a Java program for a rock-paper-scissors game where the user competes against the computer over a specified number of rounds. Ensure valid user inputs ('r' for rock, 'p' for paper, 's' for scissors) and handle invalid inputs. After each round, update and display the scores. At the end, announce the winner based on the final scores.
+ */
+public class Part_20_exercise_2_rock_paper_scissors {
     public static byte[] calculateScore(String userMove, String computerMove, byte[] scores) {
         if (userMove.equals(computerMove)) {
             System.out.println("It's a Tie!");
@@ -90,7 +93,7 @@ public class Part_20_rock_paper_scissors_challenge {
                 } else if (userInputStr.equals("s")) {
                     userInput = 2;
                 } else {
-                    throw new Exception("Invalid input!");
+                    throw new Exception(String.format("Invalid input %s!", userInputStr));
                 }
 
                 String[] moves = { "Rock", "Paper", "Scissors" };

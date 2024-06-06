@@ -1,8 +1,12 @@
-package class_tasks.chapter_1_variables_and_data_types.lessons;
+package class_tasks.chapter_1_variables_and_data_types.practice_tasks;
 
 import java.util.Scanner;
 
-public class Part_6_exercise1_1 {
+/*
+    Exercise-1: Write a program to calculate percentage of a given student in CBSE board exam. His marks from 5 subjects must be taken as input from the keyboard (marks are out of 100).
+ */
+
+public class Part_6_exercise_1_percentage_calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
