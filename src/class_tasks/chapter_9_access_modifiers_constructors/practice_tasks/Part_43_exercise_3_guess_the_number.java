@@ -45,7 +45,7 @@ class Game {
             System.out.printf("You won! Your score is %d. You guessed it in %d attempts.", score, (10 - noOfGuesses));
         } else {
             score -= 10;
-            int roundFigure = userInput / 10 * 10;
+            int floor = userInput / 10 * 10;
 
             if (score == 0) {
                 System.out.printf(
@@ -66,7 +66,7 @@ class Game {
                                 score);
                     }
                 } else {
-                    if (roundFigure == this.roundFigure) {
+                    if (floor == this.roundFigure) {
                         if (computerInput > userInput) {
                             System.out.printf(
                                     "\nIncorrect Guess!\nThe number is a little bit greater than that.\n%d attempts left!\nCurrent Score: %d\n",
@@ -79,23 +79,23 @@ class Game {
                                     score);
                         }
                     } else {
-                        if (computerInput > roundFigure) {
+                        if (computerInput > floor) {
                             System.out.printf(
                                     "\nIncorrect Guess!\nThe number is greater than %d\n%d attempts left!\nCurrent Score: %d\n",
-                                    roundFigure,
+                                    floor,
                                     noOfGuesses,
                                     score);
                         } else {
                             System.out.printf(
                                     "\nIncorrect Guess!\nThe number is less than %d\n%d attempts left!\nCurrent Score: %d\n",
-                                    roundFigure,
+                                    floor,
                                     noOfGuesses,
                                     score);
                         }
                     }
                 }
 
-                this.roundFigure = roundFigure;
+                this.roundFigure = floor;
                 takeUserInput();
             }
         }

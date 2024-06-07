@@ -2,7 +2,8 @@ package class_tasks.chapter_10_inheritance.practice_task;
 
 import java.util.Scanner;
 
-// Create a class Rectangle and use inheritance to create another class Cuboid. Try to keep it as  close to real world scenario as possible
+// 2. Create a class Rectangle and use inheritance to create another class Cuboid. Try to keep it as  close to real world scenario as possible
+// 4. Create methods for area and volume. Also create getters and setters
 
 class Rectangle {
     int length;
@@ -63,7 +64,7 @@ class Cuboid extends Rectangle {
     }
 }
 
-public class Part_52_2 {
+public class Part_52_2_and_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

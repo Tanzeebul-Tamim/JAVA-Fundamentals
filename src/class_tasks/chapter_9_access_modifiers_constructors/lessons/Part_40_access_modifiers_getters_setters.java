@@ -1,6 +1,6 @@
 package class_tasks.chapter_9_access_modifiers_constructors.lessons;
 
-class MyEmployee {
+class Employee {
     private int id;
     private String name;
 
@@ -27,7 +27,7 @@ class MyEmployee {
 
 public class Part_40_access_modifiers_getters_setters {
     public static void main(String[] args) {
-        MyEmployee tanzee = new MyEmployee();
+        Employee tanzee = new Employee();
         
         //* Not accessible this way. Will throw an error due to "private" access modifier
         // tanzee.id = 45;

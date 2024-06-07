@@ -2,7 +2,8 @@ package class_tasks.chapter_10_inheritance.practice_task;
 
 import java.util.Scanner;
 
-// Create a class Circle and use inheritance to create another class Cylinder from it.
+// 1. Create a class Circle and use inheritance to create another class Cylinder from it.
+// 3. Create methods for area and volume
 
 class Circle {
     int radius;
@@ -45,7 +46,7 @@ class Cylinder extends Circle {
     }
 }
 
-public class Part_52_1 {
+public class Part_52_1_and_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

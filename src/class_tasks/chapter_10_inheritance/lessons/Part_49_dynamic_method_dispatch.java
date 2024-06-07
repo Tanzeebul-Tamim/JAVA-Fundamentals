@@ -19,6 +19,7 @@ class Smartphone extends Phone {
         System.out.println("Turning GPS on....");
     }
 
+    @Override
     public void name(String name) {
         System.out.printf("This is a %s smartphone\n", name);
     }
