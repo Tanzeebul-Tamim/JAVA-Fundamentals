@@ -28,7 +28,7 @@ class Game {
     }
 
     public void takeUserInput() {
-        System.out.println("\nEnter a number between 1 to 100:");
+        System.out.println("\nGuess the number which is between 1 to 100:");
         int userInput = scanner.nextInt();
 
         if (userInput < 1 || userInput > 100) {
@@ -42,7 +42,7 @@ class Game {
 
     public void isCorrectNumber() {
         if (computerInput == userInput) {
-            System.out.printf("You won! Your score is %d. You spent %d guesses.", score, (10 - noOfGuesses));
+            System.out.printf("You won! Your score is %d. You guessed it in %d attempts.", score, (10 - noOfGuesses));
         } else {
             score -= 10;
             int roundFigure = userInput / 10 * 10;
@@ -56,12 +56,12 @@ class Game {
                 if (score >= 60) {
                     if (computerInput > userInput) {
                         System.out.printf(
-                                "\nIncorrect Guess!\nThe number is greater than that.\n%d guesses left!\nCurrent Score: %d\n",
+                                "\nIncorrect Guess!\nThe number is greater than that.\n%d attempts left!\nCurrent Score: %d\n",
                                 noOfGuesses,
                                 score);
                     } else {
                         System.out.printf(
-                                "\nIncorrect Guess!\nThe number is less than that.\n%d guesses left!\nCurrent Score: %d\n",
+                                "\nIncorrect Guess!\nThe number is less than that.\n%d attempts left!\nCurrent Score: %d\n",
                                 noOfGuesses,
                                 score);
                     }
@@ -69,25 +69,25 @@ class Game {
                     if (roundFigure == this.roundFigure) {
                         if (computerInput > userInput) {
                             System.out.printf(
-                                    "\nIncorrect Guess!\nThe number is a little bit greater than that.\n%d guesses left!\nCurrent Score: %d\n",
+                                    "\nIncorrect Guess!\nThe number is a little bit greater than that.\n%d attempts left!\nCurrent Score: %d\n",
                                     noOfGuesses,
                                     score);
                         } else {
                             System.out.printf(
-                                    "\nIncorrect Guess!\nThe number is a little bit less than that.\n%d guesses left!\nCurrent Score: %d\n",
+                                    "\nIncorrect Guess!\nThe number is a little bit less than that.\n%d attempts left!\nCurrent Score: %d\n",
                                     noOfGuesses,
                                     score);
                         }
                     } else {
                         if (computerInput > roundFigure) {
                             System.out.printf(
-                                    "\nIncorrect Guess!\nThe number is greater than %d\n%d guesses left!\nCurrent Score: %d\n",
+                                    "\nIncorrect Guess!\nThe number is greater than %d\n%d attempts left!\nCurrent Score: %d\n",
                                     roundFigure,
                                     noOfGuesses,
                                     score);
                         } else {
                             System.out.printf(
-                                    "\nIncorrect Guess!\nThe number is less than %d\n%d guesses left!\nCurrent Score: %d\n",
+                                    "\nIncorrect Guess!\nThe number is less than %d\n%d attempts left!\nCurrent Score: %d\n",
                                     roundFigure,
                                     noOfGuesses,
                                     score);
