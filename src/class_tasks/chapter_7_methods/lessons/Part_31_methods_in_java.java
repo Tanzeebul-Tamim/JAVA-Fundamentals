@@ -30,7 +30,7 @@ public class Part_31_methods_in_java {
      * Static keyword is used to associate a method of a given class with the class
      * rather than the object. Static method in a class is shared by all the
      * objects. In this case, tellJoke method is shared among all the objects of
-     * class Part_32_method_overloading
+     * class Part_31_methods_in_java
      */
 
     /*
