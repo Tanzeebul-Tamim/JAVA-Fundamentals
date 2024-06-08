@@ -1,4 +1,4 @@
-## Java Fundamentals
+# Java Fundamentals
 
 This repository contains notes, practice problems, and code exercises as I learn Core and Advanced Java concepts.
 
