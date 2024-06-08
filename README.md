@@ -29,10 +29,13 @@ This repository contains notes, practice problems, and code exercises as I learn
 
 **Clone the repository:**
 
+To clone this repository to your local machine, use the following command:
+
    ```sh
    git clone https://github.com/Tanzeebul-Tamim/JAVA-Fundamentals
 
    ```
+<br>
 
 **Note:** These are general instructions. You might need to adjust them based on your specific operating system and chosen IDE/text editor.
 
