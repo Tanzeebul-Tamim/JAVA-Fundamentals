@@ -38,11 +38,11 @@ class Square {
 
 public class Part_39_3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Square square = new Square();
 
         System.out.println("Please enter the length of the side of your square:");
-        double side = scanner.nextDouble();
+        double side = sc.nextDouble();
         square.initializeSide(side);
 
         double area = square.calculateArea();
@@ -52,12 +52,12 @@ public class Part_39_3 {
         System.out.println("The perimeter of the square is " + perimeter);
 
         System.out.println("Please enter the updated length of side of your square:");
-        double updatedSide = scanner.nextDouble();
+        double updatedSide = sc.nextDouble();
         square.setSide(updatedSide);
 
         double getSide = square.getSide();
         System.out.println("The updated length of each side of the square is now " + getSide);
 
-        scanner.close();
+        sc.close();
     }
 }

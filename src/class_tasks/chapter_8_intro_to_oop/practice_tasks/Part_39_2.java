@@ -23,12 +23,12 @@ class Cellphone {
 public class Part_39_2 {
     public static void main(String[] args) {
         Cellphone samsung = new Cellphone();
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Please enter your cellphone brand name:");
-        String brandName = scanner.next();
+        String brandName = sc.next();
 
-        scanner.close();
+        sc.close();
 
         samsung.brandName = brandName;
 

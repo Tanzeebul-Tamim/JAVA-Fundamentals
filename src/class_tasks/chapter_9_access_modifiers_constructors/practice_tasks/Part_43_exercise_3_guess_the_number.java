@@ -19,7 +19,7 @@ class Game {
     private int noOfGuesses = 10;
     private int roundFigure;
 
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     Random random = new Random();
 
     public Game() {
@@ -29,7 +29,7 @@ class Game {
 
     public void takeUserInput() {
         System.out.println("\nGuess the number which is between 1 to 100:");
-        int userInput = scanner.nextInt();
+        int userInput = sc.nextInt();
 
         if (userInput < 1 || userInput > 100) {
             throw new Error(String.format("Invalid input %d. Must be between 1 to 100", userInput));
@@ -102,7 +102,7 @@ class Game {
     }
 
     public void closeScanner() {
-        scanner.close();
+        sc.close();
     }
 }
 

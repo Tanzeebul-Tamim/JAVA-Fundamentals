@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class Part_25_3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Please enter a number that you want to print the multiplication table of:");
-        int n = scanner.nextInt();
-        scanner.close();
+        int n = sc.nextInt();
+        sc.close();
 
         System.out.printf("Here's the multiplication table of %d\n", n);
 

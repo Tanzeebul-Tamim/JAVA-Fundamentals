@@ -30,12 +30,12 @@ public class Part_35_5 {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the n-th term of fibonacci series using recursion:");
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
 
-        scanner.close();
+        sc.close();
 
         System.out.printf("The %dth term of the fibonacci series is %d", n, fibonacci(n));
     }

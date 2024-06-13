@@ -33,11 +33,11 @@ public class Part_34_recursion {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the number for which you want to find the factorial: ");
-        int x = scanner.nextInt();
-        scanner.close();
+        int x = sc.nextInt();
+        sc.close();
 
         System.out.println("Using recursive method, the value of factorial x is: " + factorial_recursive(x));
         System.out.println("Using iterative method, the value of factorial x is: " + factorial_iterative(x));

@@ -31,16 +31,16 @@ class Employee {
 public class Part_39_1 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Employee employee = new Employee();
 
         System.out.println("Please enter your name:");
-        String name = scanner.nextLine();
+        String name = sc.nextLine();
 
         System.out.println("Please enter your salary: ");
-        int salary = scanner.nextInt();
+        int salary = sc.nextInt();
 
-        scanner.close();
+        sc.close();
 
         employee.setName(name);
         

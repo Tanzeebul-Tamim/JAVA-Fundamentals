@@ -1,4 +1,4 @@
-package class_tasks.chapter_10_inheritance.practice_task;
+package class_tasks.chapter_10_inheritance.practice_tasks;
 
 import java.util.Scanner;
 
@@ -105,18 +105,18 @@ class Library {
 
 public class Part_51_exercise_4_online_library {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter your library capacity:");
-        int capacity = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline
+        int capacity = sc.nextInt();
+        sc.nextLine(); // Consume the newline
 
         Library centralLibrary = new Library(capacity);
 
         System.out.println("\nEnter the name of your book:");
         System.out.println("Enter \"stop\" to exit\n");
         while (true) {
-            String addedBook = scanner.nextLine();
+            String addedBook = sc.nextLine();
 
             if (addedBook.equals("stop")) {
                 break;
@@ -130,7 +130,7 @@ public class Part_51_exercise_4_online_library {
         System.out.println("\nEnter the name of the book that you want to issue:");
         System.out.println("Enter \"stop\" to exit\n");
         while (true) {
-            String issuedBook = scanner.nextLine();
+            String issuedBook = sc.nextLine();
 
             if (issuedBook.equals("stop")) {
                 break;
@@ -145,7 +145,7 @@ public class Part_51_exercise_4_online_library {
         System.out.println("\nEnter the name of the book that you want to return:");
         System.out.println("Enter \"stop\" to exit\n");
         while (true) {
-            String returnedBook = scanner.nextLine();
+            String returnedBook = sc.nextLine();
 
             if (returnedBook.equals("stop")) {
                 break;
@@ -157,6 +157,6 @@ public class Part_51_exercise_4_online_library {
         centralLibrary.showIssuedBooks();
         centralLibrary.showAvailableBooks();
 
-        scanner.close();
+        sc.close();
     }
 }

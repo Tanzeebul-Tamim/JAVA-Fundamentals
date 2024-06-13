@@ -1,4 +1,4 @@
-package class_tasks.chapter_10_inheritance.practice_task;
+package class_tasks.chapter_10_inheritance.practice_tasks;
 
 import java.util.Scanner;
 
@@ -48,15 +48,15 @@ class Cylinder extends Circle {
 
 public class Part_52_1_and_3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter circle radius:");
-        int radius = scanner.nextInt();
+        int radius = sc.nextInt();
 
         System.out.println("\nEnter cylinder height:");
-        int height = scanner.nextInt();
+        int height = sc.nextInt();
 
-        scanner.close();
+        sc.close();
 
         Cylinder cylinder = new Cylinder(radius, height);
 

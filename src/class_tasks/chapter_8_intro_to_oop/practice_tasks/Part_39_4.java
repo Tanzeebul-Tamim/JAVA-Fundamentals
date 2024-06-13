@@ -52,14 +52,14 @@ class Rectangle {
 
 public class Part_39_4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Rectangle rectangle = new Rectangle();
 
         System.out.println("Please enter the length of your rectangle:");
-        double length = scanner.nextDouble();
+        double length = sc.nextDouble();
 
         System.out.println("Please enter the width of your rectangle:");
-        double width = scanner.nextDouble();
+        double width = sc.nextDouble();
 
         rectangle.initializeSide(length, width);
 
@@ -70,11 +70,11 @@ public class Part_39_4 {
         System.out.println("The perimeter of the rectangle is " + perimeter);
 
         System.out.println("Please enter the updated length of your rectangle:");
-        double updatedLength = scanner.nextDouble();
+        double updatedLength = sc.nextDouble();
         rectangle.setLength(updatedLength);
 
         System.out.println("Please enter the updated width of the rectangle:");
-        double updatedWidth = scanner.nextDouble();
+        double updatedWidth = sc.nextDouble();
         rectangle.setWidth(updatedWidth);
 
         double getLength = rectangle.getLength();
@@ -83,6 +83,6 @@ public class Part_39_4 {
         double getWidth = rectangle.getWidth();
         System.out.println("The updated width of the rectangle is now " + getWidth);
 
-        scanner.close();
+        sc.close();
     }
 }

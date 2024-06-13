@@ -19,12 +19,12 @@ public class Part_34_recursion_quiz {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number of terms:");
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
 
-        scanner.close();
+        sc.close();
 
         if (n <= 2) {
             throw new Error("Terms must be greater than 2");

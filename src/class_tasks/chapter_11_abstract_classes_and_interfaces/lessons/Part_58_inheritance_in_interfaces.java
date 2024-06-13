@@ -10,7 +10,7 @@ interface Child extends Parent {
     void meth4();
 }
 
-class SampleClass implements Child {
+class SampleClass implements Child { 
     public void meth3() {
         System.out.println("meth3");
     }

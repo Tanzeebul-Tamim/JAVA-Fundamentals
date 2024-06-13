@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class Part_25_6 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Please enter a number that you want to print the factorial of: ");
-        int givenNumber = scanner.nextInt();
-        scanner.close();
+        int givenNumber = sc.nextInt();
+        sc.close();
 
         int factorial = 1;
         int i = 1;

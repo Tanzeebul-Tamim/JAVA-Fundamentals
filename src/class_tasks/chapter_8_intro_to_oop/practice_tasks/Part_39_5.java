@@ -50,7 +50,7 @@ class Tommy {
 
 public class Part_39_5 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Tommy player1 = new Tommy();
 
         player1.hit();
@@ -63,7 +63,7 @@ public class Part_39_5 {
 
         // * Update the health status
         System.out.println("Enter the updated health value:");
-        int health = scanner.nextInt();
+        int health = sc.nextInt();
         player1.setHealth(health);
 
         // * Get the updated health status
@@ -74,17 +74,17 @@ public class Part_39_5 {
         System.out.println("The current position of the player is at " + player1.getPosition());
 
         //* Clear the newline left by nextInt
-        scanner.nextLine();
+        sc.nextLine();
 
         // * Update the position
         System.out.println("Enter the updated position:");
-        String position = scanner.nextLine();
+        String position = sc.nextLine();
         player1.setPosition(position);
 
         // * Get the updated position
         System.out.println("The updated position of the player is at " + player1.getPosition());
 
-        scanner.close();
+        sc.close();
         player1.displayStatus();
     }
 }

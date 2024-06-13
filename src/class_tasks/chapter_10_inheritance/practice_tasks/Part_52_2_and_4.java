@@ -1,4 +1,4 @@
-package class_tasks.chapter_10_inheritance.practice_task;
+package class_tasks.chapter_10_inheritance.practice_tasks;
 
 import java.util.Scanner;
 
@@ -66,18 +66,18 @@ class Cuboid extends Rectangle {
 
 public class Part_52_2_and_4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter cuboid length:");
-        int length = scanner.nextInt();
+        int length = sc.nextInt();
 
         System.out.println("\nEnter cuboid width:");
-        int width = scanner.nextInt();
+        int width = sc.nextInt();
 
         System.out.println("\nEnter cuboid height:");
-        int height = scanner.nextInt();
+        int height = sc.nextInt();
 
-        scanner.close();
+        sc.close();
 
         Cuboid cuboid = new Cuboid(length, width, height);
 

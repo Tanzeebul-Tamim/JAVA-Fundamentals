@@ -58,7 +58,7 @@ public class Part_20_exercise_2_rock_paper_scissors {
     }
 
     public static void main(String[] args) throws Exception {
-        try (Scanner scanner = new Scanner(System.in)) {
+        try (Scanner sc = new Scanner(System.in)) {
             Random random = new Random();
 
             byte computerScore = 0;
@@ -69,8 +69,8 @@ public class Part_20_exercise_2_rock_paper_scissors {
             System.out.println("Input 'r' for rock, 'p' for paper and 's' for scissors\n");
 
             System.out.println("How many rounds do you want to play?\n");
-            byte numberOfRounds = scanner.nextByte();
-            scanner.nextLine();
+            byte numberOfRounds = sc.nextByte();
+            sc.nextLine();
 
             for (byte i = 0; i < numberOfRounds; i++) {
                 if (i == numberOfRounds - 1) {
@@ -82,7 +82,7 @@ public class Part_20_exercise_2_rock_paper_scissors {
                 int computerInput = random.nextInt(3);
 
                 System.out.println("Please enter your move:\n");
-                String userInputStr = scanner.nextLine();
+                String userInputStr = sc.nextLine();
 
                 int userInput;
 

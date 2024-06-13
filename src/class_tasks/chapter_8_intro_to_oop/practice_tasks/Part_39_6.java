@@ -40,11 +40,11 @@ class Circle {
 
 public class Part_39_6 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Circle circle = new Circle();
 
         System.out.println("Please enter the length of the radius of your circle:");
-        double radius = scanner.nextDouble();
+        double radius = sc.nextDouble();
 
         circle.initializeRadius(radius);
 
@@ -55,12 +55,12 @@ public class Part_39_6 {
         System.out.println("The circumference of the circle is " + circumference);
 
         System.out.println("Please enter the updated radius of the circle:");
-        double updatedRadius = scanner.nextDouble();
+        double updatedRadius = sc.nextDouble();
         circle.setRadius(updatedRadius);
 
         double getRadius = circle.getRadius();
         System.out.println("The updated radius of the circle is now " + getRadius);
 
-        scanner.close();
+        sc.close();
     }
 }

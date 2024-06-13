@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class Part_25_9 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Please enter the value of n:");
-        int n = scanner.nextInt();
-        scanner.close();
+        int n = sc.nextInt();
+        sc.close();
 
         int sum = 0;
         for (int i = 2; i <= n * 2; i += 2) {

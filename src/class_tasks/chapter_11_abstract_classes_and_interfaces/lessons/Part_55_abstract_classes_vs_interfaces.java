@@ -7,7 +7,8 @@ package class_tasks.chapter_11_abstract_classes_and_interfaces.lessons;
 //* This example can be used like this to determine when to use interface and when to use inheritance. Mountain bike is a type of bicycle thus the class "MountainBike" inherits from the abstract class "Bicycle". And it has features such as shifting gears and height adjustable seat post, so we can access this features from the interfaces "Shifter" and "DropperPost"
 
 abstract class Bicycle {
-    // * Non-abstract methods in an abstract class can provide default functionality that subclasses can inherit.
+    // * Non-abstract methods in an abstract class can provide default functionality
+    // that subclasses can inherit.
     void mountBike() {
         System.out.println("Get on the bike");
     }
@@ -17,17 +18,21 @@ abstract class Bicycle {
     }
 
     public abstract void applyBrake(int decrement);
+
     public abstract void speedUp(int increment);
 }
 
-//* Non-access modifiers (such as static, abstract etc) of the properties of interfaces are by default set to "final"
-//* The class implementing an Interface must define/override the methods (not mandatory to override the fields). 
-//* You can create references of Interfaces but not the object.
-//* Interface methods are public by default.
+// * Non-access modifiers (such as static, abstract etc) of the properties of
+// interfaces are by default set to "final"
+// * The class implementing an Interface must define/override the methods (not
+// mandatory to override the fields).
+// * You can create references of Interfaces but not the object.
+// * Interface methods are public by default.
 interface Shifter {
     int numberOfGears = 12;
 
     void upShift(int upshift);
+
     void downShift(int downshift);
 }
 
@@ -35,10 +40,12 @@ interface DropperPost {
     boolean isWireless = true;
 
     void raiseSeatPost();
+
     void lowerSeatPost();
 }
 
-// * We can't extend multiple abstract classes but we can implement multiple interfaces at a time
+// * We can't extend multiple abstract classes but we can implement multiple
+// interfaces at a time
 class MountainBike extends Bicycle implements Shifter, DropperPost {
     // * Overridden class from abstract classes/interfaces must be public
 
@@ -100,19 +107,20 @@ public class Part_55_abstract_classes_vs_interfaces {
 
         harryBike.raiseSeatPost();
         harryBike.lowerSeatPost();
-        
+
         harryBike.pumpSuspension();
 
         // * You can create properties in interfaces
         System.out.println("My bike has " + harryBike.numberOfGears + " gears"); // Allowed
-        
+
         if (harryBike.isWireless) {
             System.out.println("My dropper post uses Bluetooth for wireless connectivity");
         } else {
             System.out.println("My dropper post operates hydraulically");
         }
 
-        // * But you cannot modify the properties of Interfaces as they've already been finalized
+        // * But you cannot modify the properties of Interfaces as they've already been
+        // finalized
         // harryBike.numberOfGears = 10; // Not Allowed
     }
 }

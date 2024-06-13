@@ -8,10 +8,10 @@ public class Part_29_2 {
     public static void main(String[] args) {
         int[] intArr = { 53, 37, 92, 54, 23 };
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Please enter an integer:");
-        int userInput = scanner.nextInt();
-        scanner.close();
+        int userInput = sc.nextInt();
+        sc.close();
 
         boolean givenIntFound = false;
 

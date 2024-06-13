@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class Part_22_do_while_quiz {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("How long do you want to print?");
-        int n = scanner.nextInt();
-        scanner.close();
+        int n = sc.nextInt();
+        sc.close();
         int a = 1;
 
         do {

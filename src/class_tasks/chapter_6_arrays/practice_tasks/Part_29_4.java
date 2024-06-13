@@ -6,18 +6,18 @@ import java.util.Scanner;
 
 public class Part_29_4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the number of rows of the matrixes you want to add:");
-        int row = scanner.nextInt();
+        int row = sc.nextInt();
 
         System.out.println("Enter the number of columns of the matrixes you want to add:");
-        int column = scanner.nextInt();
+        int column = sc.nextInt();
 
         System.out.println();
 
         if (row <= 0 || column <= 0) {
-            scanner.close();
+            sc.close();
             throw new Error("Invalid dimensions. Number of rows and columns must be positive integers.");
         }
 
@@ -29,7 +29,7 @@ public class Part_29_4 {
             for (int j = 0; j < column; j++) {
                 int elementNo = (i * column + j + 1);
                 System.out.printf("Enter the element no %d of matrix 1:", elementNo);
-                matrix1[i][j] = scanner.nextInt();
+                matrix1[i][j] = sc.nextInt();
             }
         }
 
@@ -39,7 +39,7 @@ public class Part_29_4 {
             for (int j = 0; j < column; j++) {
                 int elementNo = (i * column + j + 1);
                 System.out.printf("Enter the element no %d of matrix 2:", elementNo);
-                matrix2[i][j] = scanner.nextInt();
+                matrix2[i][j] = sc.nextInt();
             }
         }
 
@@ -53,7 +53,7 @@ public class Part_29_4 {
             System.out.println();
         }
 
-        scanner.close();
+        sc.close();
 
         /*
          * flats[1][1] = 101; (i - 1 * numberOfColumns) + j -> Calculate the number of
