@@ -47,12 +47,12 @@ The updated directory structure is as follows:
   │   │   ├── ... more lesson files
   │   │   └── (includes additional unstructured files and folders for demonstrating compilation commands)
   │   │
-  │   ├── practice_tasks
-  │   │   ├── Part_no_taskNo.java
-  │   │   ├── ... more practice-task files
-  │   │   └── (includes additional unstructured files and folders for demonstrating compilation commands)
-  │   │
-  │   └── ... more chapter folders  
+  │   └── practice_tasks
+  │       ├── Part_no_taskNo.java
+  │       ├── ... more practice-task files
+  │       └── (includes additional unstructured files and folders for demonstrating compilation commands)
+  │    
+  │     
   │
   ├── ch12Issue.md
   ├── .gitignore     
