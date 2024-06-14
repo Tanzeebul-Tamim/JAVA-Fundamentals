@@ -52,8 +52,6 @@ The updated directory structure is as follows:
   │       ├── ... more practice-task files
   │       └── (includes additional unstructured files and folders for demonstrating compilation commands)
   │    
-  │     
-  │
   ├── ch12Issue.md
   ├── .gitignore     
   └── README.md

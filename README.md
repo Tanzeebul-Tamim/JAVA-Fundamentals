@@ -40,7 +40,7 @@ This repository contains notes, practice problems, and code exercises as I learn
 
 ## Important Notes
 
-#### Chapter 12 Directory Structure
+### Chapter 12 Directory Structure
 
 For Chapter 12, I encountered several issues related to package declarations and directory structure. To understand the reason behind the directory structure changes, the updated directory structure, the solutions implemented, and details about Java packages, please refer to the [Chapter 12 Directory Structure Note](./ch12Issue.md).
 
