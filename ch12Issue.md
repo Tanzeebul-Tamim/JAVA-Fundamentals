@@ -22,23 +22,23 @@ The updated directory structure is as follows:
 ./project_root
   ├── src
   │   └── class_tasks
-  │       └── chapter_no
-  │           ├── lessons
-  │           │   ├── Part_no_title.java
-  │           │   └── ... more lesson files
-  │           │
-  │           ├── practice_tasks
-  │           │   ├── Part_no_taskNo.java
-  │           │   └── ... more practice-task files
-  │           │
-  │           └── ... more chapter folders
+  │       ├── chapter_no
+  │       │   ├── lessons
+  │       │   │   ├── Part_no_title.java
+  │       │   │   └── ... more lesson files
+  │       │   │
+  │       │   └── practice_tasks
+  │       │       ├── Part_no_taskNo.java
+  │       │       └── ... more practice-task files
+  │       │
+  │       └── ... more chapter folders
   │
   ├── notes
   │   ├── chapter_no_chapterTitle
   │   │   ├── ChapterNo.pdf
   │   │   └── ChapterNoPracticeSet.pdf
   │   │
-  │   ├── ... more note folders    
+  │   ├── ... more note folders according to each chapter    
   │   └── UltimateJavaCheatSheet.pdf
   │
   ├── chapter_12_packages
