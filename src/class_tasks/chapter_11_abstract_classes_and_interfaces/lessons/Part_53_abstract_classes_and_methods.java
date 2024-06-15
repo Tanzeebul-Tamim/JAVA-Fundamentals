@@ -17,14 +17,16 @@ abstract class Parent {
         System.out.println("Hello");
     }
 
-    //* Abstract method: a method that is declared without an implementation
+    // * Abstract method: a method that is declared without an implementation
     public abstract void greet();
+
     public abstract void greetAgain();
 }
 
-//* Child classes derived from an abstract class must either be declared "abstract" or override the "abstract method" 
+// * Child classes derived from an abstract class must either be declared
+// "abstract" or override the "abstract method"
 
-//* Option-1: Overriding the abstract methods and creating a concrete class
+// * Option-1: Overriding the abstract methods and creating a concrete class
 class Child1 extends Parent {
     @Override
     public void greet() {
@@ -43,10 +45,11 @@ abstract class Child2 extends Parent {
     }
 }
 
-//* Option-2: Declaring the child class as an abstract method
+// * Option-2: Declaring the child class as an abstract method
 public class Part_53_abstract_classes_and_methods {
     public static void main(String[] args) {
-        //* Abstract classes cannot be instantiated / cannot make objects from abstract classes
+        // * Abstract classes cannot be instantiated / cannot make objects from abstract
+        // classes
         // Parent abstract = new Parent(); // Not Allowed
 
         Child1 concrete = new Child1(); // Allowed
@@ -56,7 +59,8 @@ public class Part_53_abstract_classes_and_methods {
 
         // Child2 concrete = new Child2(); // Not Allowed as well
 
-        //* We can also assign reference of an abstract class to the object of a concrete subclass (dynamic method dispatch)
+        // * We can also assign reference of an abstract class to the object of a
+        // concrete subclass (dynamic method dispatch)
         Parent concrete2 = new Child1(); // Allowed
         concrete2.greet();
         concrete2.greetAgain();

@@ -1,27 +1,32 @@
 package class_tasks.chapter_11_abstract_classes_and_interfaces.lessons;
 
-interface Parent {
+interface MyParent {
     void meth1();
+
     void meth2();
 }
 
-interface Child extends Parent {
+interface MyChild extends MyParent {
     void meth3();
+
     void meth4();
 }
 
-class SampleClass implements Child { 
+class SampleClass implements MyChild {
     public void meth3() {
         System.out.println("meth3");
     }
+
     public void meth4() {
         System.out.println("meth4");
     }
-    
-    //* interface "Child" will enforce "meth1" and "meth2" inherited from interface "Parent"
+
+    // * interface "Child" will enforce "meth1" and "meth2" inherited from interface
+    // "Parent"
     public void meth1() {
         System.out.println("meth1");
     }
+
     public void meth2() {
         System.out.println("meth2");
     }
