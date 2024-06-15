@@ -38,7 +38,7 @@ This repository contains notes, practice problems, and code exercises as I learn
   └── README.md
 ```
 
-## Important Notes
+## Important Note
 
 ### Chapter 12 Directory Structure
 
