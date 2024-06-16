@@ -1,4 +1,6 @@
-# Important Announcement on Chapter 12 Directory Structure
+# Vital Update
+
+### Chapter 12 Directory Structure
 
 As part of my Java course, I have maintained an organized directory structure for storing all course contents. The structure follows a pattern where the contents of each chapter are placed inside either `./src/class_tasks/chapter_no/lessons` or `./src/class_tasks/chapter_no/practice_tasks` directory. This organization helps in keeping the project clean and accessible.
 
