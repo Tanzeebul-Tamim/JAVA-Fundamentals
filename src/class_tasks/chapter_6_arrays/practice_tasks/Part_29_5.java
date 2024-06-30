@@ -5,8 +5,7 @@ package class_tasks.chapter_6_arrays.practice_tasks;
 public class Part_29_5 {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5, 6 };
-        int n = (int) (Math.floor(arr.length / 2));
-        System.out.println(n);
+        int n = (int) arr.length / 2;
 
         for (int i = 0; i < n; i++) {
             int element = arr[i];

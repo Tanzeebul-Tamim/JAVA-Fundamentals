@@ -8,7 +8,7 @@ import java.util.Scanner;
     You have to create a package named com.java_course.shape.
     This package should have individual classes for Rectangle, Square, Circle, Cuboid, Cube, Cylinder, Sphere.
     These classes should use inheritance to properly manage the code!
-    Include methods like volume, surface area, perimeter, getters and setters for dimensions etc.
+    Include methods like volume, surface area, perimeter, getters and setters for dimensions etc. 
  */
 
   /*
