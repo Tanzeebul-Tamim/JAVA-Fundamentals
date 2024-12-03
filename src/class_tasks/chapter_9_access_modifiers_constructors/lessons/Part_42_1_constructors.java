@@ -39,7 +39,7 @@ class Student {
     }
 }
 
-public class Part_42_constructors {
+public class Part_42_1_constructors {
     public static void main(String[] args) {
         Student tanzee = new Student(23301265, "Tanzeebul Tamim", "CSE");
         Student tamim = new Student();

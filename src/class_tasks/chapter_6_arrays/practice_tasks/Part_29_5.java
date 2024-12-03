@@ -10,6 +10,7 @@ public class Part_29_5 {
         for (int i = 0; i < n; i++) {
             int element = arr[i];
             int reservedElement = arr[arr.length - 1 - i];
+
             arr[arr.length - 1 - i] = element;
             arr[i] = reservedElement;
         }

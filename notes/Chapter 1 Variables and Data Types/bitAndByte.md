@@ -63,23 +63,23 @@ These ranges represent the maximum and minimum values that each primitive data t
 
 Here's the information presented in a table format:
 
-| Data Type | Size (bits) | Size (bytes) | Range | Formula | Default Value |
-|---|---|---|---|---|---|
-| byte      | 8           | 1            | -128 to 127                                       | \(2^8 - 1 = 256 - 1 = 255\)                                                  | 0 |
-| short     | 16          | 2            | -32,768 to 32,767                                       | \(2^{16} - 1 = 65,536 - 1 = 65,535\)                                         | 0 |
-| int       | 32          | 4            | -2,147,483,648 to 2,147,483,647                         | \(2^{32} - 1 = 4,294,967,296 - 1 = 4,294,967,295\)                           | 0 |
-| long      | 64          | 8            | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | \(2^{64} - 1 = 18,446,744,073,709,551,616 - 1 = 18,446,744,073,709,551,615\) | 0L |
-| float     | 32          | 4            | Approximately ±3.40282347E+38F                          | No direct formula                                                            | 0.0f |
-| double    | 64          | 8            | Approximately ±1.79769313486231570E+308                 | No direct formula                                         v                   | 0.0d |
-| char      | 16          | 2            | 0 to 65,535                                             | \(2^{16} - 1 = 65,536 - 1 = 65,535\)                                                            | '\0' (null character) |
-| boolean   | Typically 1 | Typically 1  | true or false                                           | No direct range                                                              | false |
+| Data Type  | Size (bits)  | Size (bytes)  | Range                                                    | Formula                                                                                          | Default Value         |
+| ---------- | ------------ | ------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------------- |
+| byte       | 8            | 1             | -128 to 127                                              | \(2^8 - 1 = 256 - 1 = 255\)                                                                      | 0                     |
+| short      | 16           | 2             | -32,768 to 32,767                                        | \(2^{16} - 1 = 65,536 - 1 = 65,535\)                                                             | 0                     |
+| int        | 32           | 4             | -2,147,483,648 to 2,147,483,647                          | \(2^{32} - 1 = 4,294,967,296 - 1 = 4,294,967,295\)                                               | 0                     |
+| long       | 64           | 8             | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807  | \(2^{64} - 1 = 18,446,744,073,709,551,616 - 1 = 18,446,744,073,709,551,615\)                     | 0L                    |
+| float      | 32           | 4             | Approximately ±3.40282347E+38F                           | No direct formula                                                                                | 0.0f                  |
+| double     | 64           | 8             | Approximately ±1.79769313486231570E+308                  | No direct formula                                                                                | 0.0d                  |
+| char       | 16           | 2             | 0 to 65,535                                              | \(2^{16} - 1 = 65,536 - 1 = 65,535\)                                                             | '\0' (null character) |
+| boolean    | Typically 1  | Typically 1   | true or false                                            | No direct range                                                                                  | false                 |
 
 So if a data size is n bytes, value will range from -2^(8n-1) to 2^(8n-1)-1
 
 **Explanation for Default Values:**
 
-* For numeric data types (`byte`, `short`, `int`, and `long`), the default value is typically `0`.
-* For floating-point data types (`float` and `double`), the default value is typically `0.0` with the appropriate suffix (`f` for float and `d` for double).
-* The `char` data type uses the null character (`\0`)
+- For numeric data types (`byte`, `short`, `int`, and `long`), the default value is typically `0`.
+- For floating-point data types (`float` and `double`), the default value is typically `0.0` with the appropriate suffix (`f` for float and `d` for double).
+- The `char` data type uses the null character (`\0`)
 
 This table provides a concise summary of the size, range, default values and formula (where applicable) for each primitive data type in Java.
